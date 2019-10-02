@@ -11,8 +11,10 @@ Only identifiers are allowed as names for variables.
 There are four operators that can be used on sets in this language:
 + : A + B = { x | x ∈ A ∨ x ∈ B } union
 * : A * B = { x | x ∈ A ∧ x ∈ B } intersection
+
 − : A − B = { x | x ∈ A ∧ x ∉ B } complement
 | : A | B = { x | x ∈ A + B ∧ x ∉ A * B } symmetric difference
+
 = { x | x ∈ (A + B) − (A * B) }
 
 The operator '*' has a higher priority than '+', '|' and '-', whom have the same
